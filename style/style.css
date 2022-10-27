@@ -82,14 +82,11 @@ main {
 }
 
 .card {
-  width: 30%;
   background-color: #000000;
   color: #ffffff;
   padding: 10px;
+  margin: 10px;
   border-radius: 10px;
-  display: inline-block;
-  margin-inline: 1.5%;
-  margin-block: 20px;
 }
 
 .card-img {
@@ -130,17 +127,6 @@ main {
 /*CARD SOMOS TRAVEL BRAVO*/
 i {
   font-size: 100px;
-}
-
-.card1 {
-  width: 30%;
-  background-color: #00000000;
-  color: #ffffff;
-  padding: 10px;
-  border-radius: 10px;
-  display: inline-block;
-  margin-inline: 1.5%;
-  margin-block: 20px;
 }
 
 .card-title1,
@@ -199,17 +185,6 @@ i {
   text-align: center;
 }
 
-.cardeg {
-  width: 30%;
-  background-color: #00000000;
-  color: #ffffff;
-  padding: 10px;
-  border-radius: 10px;
-  display: inline-block;
-  margin-inline: 1.5%;
-  margin-block: 20px;
-}
-
 .title-eg,
 .h4-eg,
 .p-eg {
@@ -247,4 +222,13 @@ i {
 
 .container {
   background-color: #08063d00;
+}
+
+.carousel-inner img {
+  width: 100%;
+  max-height: 650px;
+}
+
+.carousel-inner {
+  height: 650px;
 }
