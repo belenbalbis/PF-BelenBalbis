@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Bungee+Spice&family=Dancing+Script:wght@400;500&family=Nabla&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Acme", sans-serif;
+}
+
+main,
+footer {
+  background-color: #08080892;
+  color: #ffffff;
+  padding: 1rem;
+}
+
+body {
+  background-color: #08063de3;
+  margin: 0;
+  padding: 1rem;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-rows: auto auto 1fr auto;
+  min-height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "nav" "main" "footer";
+}
+
+header {
+  grid-area: header;
+}
+
+.navbar {
+  grid-area: nav;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+@media (min-width: 768px) {
+  body {
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 12rem 1fr;
+    grid-template-areas:
+      "header nav"
+      "main main"
+      "footer footer";
+  }
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+}
+
+.menu-item a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 54px;
+}
+
+.nav-item.active {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+.img-logo {
+  width: 200px;
+}
+
+/*CARD DESTINOS*/
+
+main {
+  padding: 25px;
+}
+
+.card {
+  width: 30%;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-inline: 1.5%;
+  margin-block: 20px;
+}
+
+.card-img {
+  max-width: 100%;
+  align-self: center;
+  width: 100%;
+}
+
+.card-title {
+  font-size: 18px;
+}
+
+.card-p {
+  font-size: 14px;
+}
+
+.card-button {
+  background-color: #c0bdbd;
+  border: 0;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.card-img,
+.card-title,
+.card-p {
+  margin-bottom: 10px;
+}
+
+/*ANTES DE VIAJAR*/
+
+.h2-antes {
+  text-align: left;
+}
+
+/*CARD SOMOS TRAVEL BRAVO*/
+i {
+  font-size: 100px;
+}
+
+.card1 {
+  width: 30%;
+  background-color: #00000000;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-inline: 1.5%;
+  margin-block: 20px;
+}
+
+.card-title1,
+.card-p1 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.ventajas {
+  text-align: center;
+}
+
+.card1:hover {
+  background-color: #08063de3;
+}
+
+/*FOOTER*/
+
+.fa-brands {
+  font-size: 20px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.insta {
+  text-align: left;
+  list-style-type: none;
+}
+
+.fb {
+  list-style-type: none;
+  text-align: left;
+}
+
+.tw {
+  list-style-type: none;
+  text-align: left;
+}
+
+.pie {
+  list-style-type: none;
+  display: flex;
+}
+
+.item-footer {
+  margin-right: 54px;
+}
+
+/*EGIPTO*/
+
+.egipto10 {
+  text-align: center;
+}
+
+.cardeg {
+  width: 30%;
+  background-color: #00000000;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-inline: 1.5%;
+  margin-block: 20px;
+}
+
+.title-eg,
+.h4-eg,
+.p-eg {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.title-eg {
+  color: chocolate;
+}
+
+.deseg {
+  width: 70%;
+  text-align: center;
+}
+
+.ulegipto {
+  list-style-type: none;
+}
+
+.bi {
+  font-size: 1rem;
+}
+
+.accordion-body {
+  color: #f9f7f7;
+  background-color: #08063d;
+}
+
+@media (min-width: 992px) {
+  .alto {
+    height: 100vh;
+  }
+}
+
+.container {
+  background-color: #08063d00;
+}
