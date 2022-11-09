@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MACHU PICCHU</title>
+
+    <!--CSS BOOTSTRAP-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!--ICONOS BOOTSTRAP-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+
+    <!--FAVICON-->
+    <link rel="icon" href="imagenes/favicon.png" />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="style/style.css" />
+
+    <!--FONTAWSOME-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&family=Bungee+Spice&family=Dancing+Script:wght@400;500&family=Nabla&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--ANIMATEDCSS-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <!--LOGO-->
+      <a href="index.html"
+        ><img
+          src="imagenes/favicon.png"
+          alt="LogoTravelBravo"
+          width="150px"
+          class="img-logo animate__animated animate__pulse"
+      /></a>
+    </header>
+
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Somos Travel Bravo</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="antes-de-viajar.html"
+                >Antes de Viajar</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="destinos.html"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Destinos
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="destinos.html"
+                    >Nuestros destinos</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="egipto.html">Egipto</a></li>
+                <li><a class="dropdown-item" href="kenia.html">Kenia</a></li>
+                <li>
+                  <a class="dropdown-item" href="machupichu.html"
+                    >Machu Picchu</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#">Maldivas</a></li>
+                <li><a class="dropdown-item" href="#">Rio de Janeiro</a></li>
+                <li><a class="dropdown-item" href="#">Tailandia</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactanos.html">Contactanos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--MAIN-->
+    <main>
+        <div class="montañas"><h1>9 días en la montaña</h1></div>
+
+    <!--CAROUSEL-->
+    <div
+    id="carouselExampleIndicators"
+    class="carousel slide"
+    data-bs-ride="carousel"
+  >
+    <div class="carousel-indicators">
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="0"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="1"
+        aria-label="Slide 2"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="2"
+        aria-label="Slide 3"
+      ></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="imagenes/macu-carousel1(1).jpg"
+          class="d-block w-100"
+          alt="1"
+        />
+      </div>
+      <div class="carousel-item">
+        <img
+          src="imagenes/machu-carousel2.jpg"
+          class="d-block w-100"
+          alt="2"
+        />
+      </div>
+      <div class="carousel-item">
+        <img
+          src="imagenes/machu-carousel3(1).jpg"
+          class="d-block w-100"
+          alt="3"
+        />
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+
+   <!--DESCRIPCION MACHUPICCHU-->
+   <div class="container p-5">
+    <div class="row d-flex">
+      <div class="col-md-4">
+
+        <!--DURACION-->
+        <div class="cardmachu">
+          <div class="text-center"><i class="fa-solid fa-clock"></i></div>
+          <h4 class="h4-machu">9 días</h4>
+          <p class="p-machu">
+            8 Noches
+          </p>
+        </div>
+</div>
+      <div class="col-md-4">
+
+        <!--PAISES-->
+        <div class="cardmachu">
+          <div class="text-center"><i class="fa-solid fa-earth-africa"></i></i></div>
+          <h4 class="h4-machu">1 País</h4>
+          <p class="p-machu">
+            9 Ciudades
+          </p>
+        </div></div>
+      <div class="col-md-4">
+        
+        <!--TOUR GRUPAL-->
+        <div class="cardmachu">
+          <div class="text-center"><i class="fa-solid fa-people-group"></i></div>
+          <h4 class="h4-machu">Tour Grupal</h4>
+          <p class="p-machu">
+            Grupos de 15 viajeros
+          </p>
+        </div></div>
+    </div>
+  </div>
+
+   <!--PARRAFO DESCRICIPCION MACHUPICCHU-->
+   <div class="container">
+    <div class="row d-flex text-align-center justify-content-between">
+        <div class="col-md-12">
+            <div><p class="text-center">
+
+                Perú y el sinfín de bellezas naturales que podemos encontrar a lo largo de su territorio no dejan de sorprendernos y en esta aventura no será diferente. Si eres un admirador de la montaña, de la aventura y el camping, esta propuesta es perfecta para ti. Junto con un grupo de viajeros haremos un recorrido único que nos llevará por lugares asombrosos.
+                
+                Comenzaremos nuestra travesía experimentando las tradiciones del pueblo peruano en Cusco para luego irnos durante 5 días a realizar un trekking por la antigua ruta de Salkantay hasta llegar a la maravillosa Ciudadela de Machu Picchu. Pasaremos por la espectacular Laguna Humantay y cruzaremos el paso Salkantay llegando a los 4650 msnm que será la altitud máxima de nuestra ruta. A partir de ahí, comenzaremos nuestro descenso hacia la selva andina para finalmente llegar a la ciudad perdida y dejarnos envolver por toda la energía e historia que contiene.
+                
+                A lo largo de nueve días tendremos el placer de hacer un recorrido que nos llevará tanto a montañas sagradas como a uno de los puntos más altos de los macizos cordilleranos de la región cusqueña y tú puedes ser parte. Anímate a esta aventura que te hará sentir Perú como nunca imaginaste.
+                </p></div>
+
+        </div>
+    </div>
+  </div>
+
+  <h2>Incluye</h2>
+          <ul class="ulmachu">
+            <li><i class="bi bi-check2"></i> Hoteles con desayuno</li>
+            <li><i class="bi bi-check2"></i> Tours y excursiones</li>
+            <li><i class="bi bi-check2"></i> Transportes y entradas</li>
+            <li><i class="bi bi-check2"></i> Traslados en vuelos privados</li>
+            <li><i class="bi bi-check2"></i> Guiados en español e inglés</li>
+            <li><i class="bi bi-check2"></i> Agua mineral durante el recorrido.</li>
+            <li><i class="bi bi-check2"></i> Seguro de viaje.</li>
+          </ul>
+
+          <!--ITINERARIO-->
+          <h2>Itinerario</h2>
+
+          <div class="accordion accordion-flush" id="accordionFlush">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Día 1: Llegada a Cusco
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlush">
+                <div class="accordion-body"><p>A lo largo de este primer día, nos encontraremos con todos los viajeros en el hostel de la ciudad de Cusco. Será importante tomarse este primer día con calma para irnos aclimatando a la altura cusqueña; podremos salir a conocer los alrededores y tomar un buen té de coca para preparar nuestro cuerpo a la altura.</p></div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Día 2:Caminando Cusco - encuentro con las tradiciones
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlush">
+                <div class="accordion-body"><p>Luego de desayunar, tendremos tiempo para recorrer las bellas calles de Cusco. Te recomendamos caminar por los lugares más emblemáticos de la zona atendiendo a los detalles que hacen de esta ciudad un destino único.</p></div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Día 3 : A la carta
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlush">
+                <div class="accordion-body"><p>A lo largo del día podremos disfrutar y recorrer la ciudad de Cusco como más nos guste. Tendremos tiempo libre para caminar por sus calles y visitar sus lugares más emblemáticos, también podremos disfrutar de sus mercados de artesanías y de gastronomía peruana desde donde podremos ver y conectarnos con las tradiciones latentes del pueblo andino.</p></div>
+              </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    Día 4: Comenzando la aventura
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlush">
+                  <div class="accordion-body"><p>Para comenzar nuestra aventura de 5 días, nos levantarán en el hostel en Cusco a eso de las 04 am. Desde ahí nos dirigiremos al pueblo de Mollepata donde tomaremos un reconfortante desayuno para luego comenzar con nuestra caminata de 13 km. Luego de recorrer unas seis horas aproximadamente y de disfrutar la espectacular Laguna Humantay, llegaremos a Soraypampa, ubicado a 3850 msnm. Allí arribaremos a nuestro campamento y disfrutaremos una noche inolvidable.</p></div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                    Día 5 : El punto más alto
+                  </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlush">
+                  <div class="accordion-body"><p>Desde muy temprano nos prepararemos para tomar nuestro desayuno y luego comenzaremos con nuestra caminata de ascenso hacia el Paso Salkantay. En unas cuatro horas aproximadamente habremos llegado al punto más alto de nuestra ruta, es decir, a los 4650 msnm. Disfrutaremos la vista de los dos nevados más altos – Salkantay y Humantay – para luego continuar con nuestra caminata hacia el segundo campamento ubicado en Chaullay a 2850 msnm. A lo largo del día recorreremos unas nueve horas y unos 22 km, siendo éste, uno de los días más exigentes de nuestro recorrido hacía el camino del Inca.</p></div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                    Día 6: De la montaña a la selva
+                  </button>
+                </h2>
+                <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlush">
+                  <div class="accordion-body"><p>Luego de desayunar, comenzaremos con nuestra jornada de caminata. A lo largo del día recorreremos unos 18 km aprox apreciando plantaciones de café, orquídeas, begonias, bromelias y muchas plantas naturales utilizadas para la medicina natural. También, sentiremos cómo la temperatura va cambiando notablemente, esto se deberá a que pasaremos de la montaña a la selva. La temperatura se irá suavizando bastante y la humedad irá aumentando de forma considerable. Llegaremos a La Playa y luego iremos a descansar a nuestro tercer campamento en Santa Teresa, y los que quieran pueden ir a tomar un baño de agua termal, además disfrutaremos de una exquisita cena.</p></div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingSeven">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                    Día 7: El camino Inca 
+                  </button>
+                </h2>
+                <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlush">
+                  <div class="accordion-body"><p><li>Después de disfrutar de un espectacular amanecer nos trasladaremos en vehículo hacia Lucmabamba, luego empezamos a caminar unas tres horas aproximadamente por Camino Inca hacia Llactapata. Desde ahí podremos apreciar, con una vista increíble, el Valle de Santa Teresa y podremos ir observando la montaña Machu Picchu y la montaña Huayna Picchu. Este será el primer sitio arqueológico que veremos sobre la ciudad perdida de los Incas, un lugar muy importante donde podremos disfrutar y tener tiempo de conocer más sobre las raíces e historia de esta tierra. Después continuaremos descendiendo por dos horas hasta que lleguemos a la estación hidroeléctrica y continuar nuestra caminata hacia Aguas Calientes.</li></p></div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingEight">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                        Día 8: La ciudad perdida
+                      </button>
+                    </h2>
+                    <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlush">
+                      <div class="accordion-body"><p>El último día de nuestra aventura se inicia a las 04:30 am aproximadamente, comenzamos la caminata en la cual ascenderemos hacia la majestuosa ciudad Inca de Machu Picchu. Una vez allí podremos recorrer los diferentes sectores del complejo arqueológico. Finalmente retornaremos al poblado de Aguas Calientes y esperaremos el tren que nos llevará hasta Ollantaytambo para luego continuar nuestro recorrido hasta nuestro alojamiento en Cusco.</p></div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingNine">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                        Día 9: Regresar al lugar de origen
+                      </button>
+                    </h2>
+                    <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlush">
+                      <div class="accordion-body"><p>Porque lo lindo de volver de viaje es (re)conocernos en lo aprendido. Siempre es importante regresar al lugar de origen para compartir las vivencias, las fotos y las experiencias que hayamos encarnado a lo largo de nuestra estadía.
+
+                        Durante este día nos estaremos despidiendo del encanto altiplánico y emprenderemos el viaje de retorno a nuestros países de origen.</p></div>
+                    </div>
+                  </div>
+              </div>
+              </div>
+
+              <!--PRECIOS-->
+        <main class="container text-center d-flex flex-column justify-content-center alto">
+            <h1 class="display-4">Precios</h1>
+            <p class="lead">Para reservar tu lugar debes realizar una seña por USD 100</p>
+            <div class="row gy-3">
+              <article class="col-12 col-md-6">
+                <div class="border border-dark rounded-3">
+                  <p class="mt-5 fw-bold">Un viajero</p>
+                  <h2 class="display-4">U$S 869</h2>
+                  <p class="font-monospace mt-3">Contado efectivo</p>
+                  <ul class="list-unstyled my-5">
+                    <li>Tickets aéreos en clase turista</li>
+                    <li>Seguro de viajes por USD 65.000, incluye cobertura por COVID-19</li>
+                    <li>Guía local durante todo el viaje</li>
+                  </ul>
+                  <a href="#" class="bg-secondary text-white d-block py-3 text-decoration-none">Comprar</a>
+                </div>
+              </article>
+              <article class="col-12 col-md-6">
+                <div class="border border-dark rounded-3 bg-dark text-white">
+                  <p class="mt-5 fw-bold">Viajeros en base doble</p>
+                  <h2 class="display-4">U$S 669</h2>
+                  <p class="font-monospace mt-3">Contado efectivo</p>
+                  <ul class="list-unstyled my-5">
+                    <li>Tickets aéreos en clase turista</li>
+                    <li>Seguro de viajes por USD 65.000, incluye cobertura por COVID-19</li>
+                    <li>Guía local durante todo el viaje</li>
+                  </ul>
+                  <a href="#" class="bg-secondary text-white d-block py-3 text-decoration-none">Comprar</a>
+                </div>
+              </article>
+            </main>
+
+    <!--FOOTER-->
+    <footer>
+        <ul class="pie">
+          <li class="item-footer">
+            <a href="http://www.instagram.com"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <li class="item-footer">
+            <a href="http://www.facebook.com"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </li>
+          <li class="item-footer">
+            <a href="http://www/twitter.com"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </li>
+        </ul>
+      </footer>
+
+
+   <!-- JAVASCRIPT BUNDLE WITH POPPER -->
+   <script
+   src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+   crossorigin="anonymous"
+ ></script>
+  </body>
+</html>
