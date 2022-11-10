@@ -286,6 +286,22 @@ main {
   list-style-type: none;
 }
 
+/*TAILANDIA*/
+.tailandia {
+  text-align: center;
+}
+
+.title-tai,
+.h4-tai,
+.p-tai {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.ultai {
+  list-style-type: none;
+}
+
 /*ACCORDIONS*/
 .accordion-body {
   color: #f9f7f7;
