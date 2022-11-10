@@ -118,7 +118,9 @@
                 <li>
                   <a class="dropdown-item" href="rio.html">Rio de Janeiro</a>
                 </li>
-                <li><a class="dropdown-item" href="#">Tailandia</a></li>
+                <li>
+                  <a class="dropdown-item" href="tailandia.html">Tailandia</a>
+                </li>
               </ul>
             </li>
             <li class="nav-item active">
@@ -130,6 +132,74 @@
     </nav>
 
     <!--FORMULARIO-->
+
+    <div class="contact_form">
+      <div class="formulario">
+        <h1 class="contactanos">Contactanos</h1>
+        <h3 class="breve">Te respondemos en breve!</h3>
+
+        <form action="submeter-formulario.php" method="post">
+          <p class="form-p">
+            <label for="nome" class="colocar_nome"
+              >Nombre
+              <span class="obrigatorio">*</span>
+            </label>
+            <input
+              type="text"
+              name="introduzir_nome"
+              id="nome"
+              required="obrigatorio"
+              placeholder="Tu nombre"
+            />
+          </p>
+
+          <p>
+            <label for="email" class="colocar_email"
+              >Email
+              <span class="obrigatorio">*</span>
+            </label>
+            <input
+              type="email"
+              name="introduzir_email"
+              id="email"
+              required="obrigatorio"
+              placeholder="Tu Email"
+            />
+          </p>
+
+          <p>
+            <label for="telefone" class="colocar_telefone">Celular </label>
+            <input
+              type="tel"
+              name="introduzir_telefone"
+              id="telefone"
+              placeholder="Tu celular"
+            />
+          </p>
+          <p>
+            <label for="mensagem" class="colocar_mensagem"
+              >Mensaje
+              <span class="obrigatorio">*</span>
+            </label>
+            <textarea
+              name="introduzir_mensagem"
+              class="texto_mensagem"
+              id="mensagem"
+              required="obrigatorio"
+              placeholder="Escribe tu mensaje aqui..."
+            ></textarea>
+          </p>
+
+          <button type="submit" name="enviar_formulario" id="enviar">
+            <p>Enviar</p>
+          </button>
+
+          <p class="aviso">
+            <span class="obrigatorio"> * </span>Campos obligatorios
+          </p>
+        </form>
+      </div>
+    </div>
 
     <!--FOOTER-->
     <footer>
