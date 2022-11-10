@@ -218,16 +218,6 @@ main {
   font-size: 1rem;
 }
 
-.accordion-body {
-  color: #f9f7f7;
-  background-color: #30415d;
-}
-
-.accordion-button {
-  color: #ffffff;
-  background-color: #031424;
-}
-
 /*KENIA*/
 .safari {
   text-align: center;
@@ -278,6 +268,33 @@ main {
 
 .ulmaldivas {
   list-style-type: none;
+}
+
+/*RIO DE JANEIRO*/
+.rio {
+  text-align: center;
+}
+
+.title-rio,
+.h4-rio,
+.p-rio {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.ulrio {
+  list-style-type: none;
+}
+
+/*ACCORDIONS*/
+.accordion-body {
+  color: #f9f7f7;
+  background-color: #30415d;
+}
+
+.accordion-button {
+  color: #ffffff;
+  background-color: #031424;
 }
 
 @media (min-width: 992px) {
