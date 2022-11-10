@@ -1,0 +1,30 @@
+{
+  "name": "travelbravo",
+  "version": "1.0.0",
+  "description": "¿Por qué viajar con Bravo? · Descubre una nueva forma de viajar. Vive tu viaje de aventura como una experiencia llena de emociones que recordarás el resto de tu vida.",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/belenbalbis/SegundaEntrega-BelenBalbis.git"
+  },
+  "keywords": [
+    "viaje",
+    "aventura",
+    "paises",
+    "paquetes",
+    "mundo",
+    "vuelos",
+    "hoteles",
+    "playas",
+    "experiencias"
+  ],
+  "author": "B.Balbis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/belenbalbis/SegundaEntrega-BelenBalbis/issues"
+  },
+  "homepage": "https://github.com/belenbalbis/SegundaEntrega-BelenBalbis#readme"
+}
