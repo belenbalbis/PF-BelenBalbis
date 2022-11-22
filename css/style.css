@@ -12,7 +12,7 @@
 
 /*HEADER*/
 header {
-  grid-area: header;
+  display: flex;
 }
 
 .img-logo {
@@ -20,9 +20,6 @@ header {
 }
 
 /*NAVBAR*/
-.navbar {
-  grid-area: nav;
-}
 
 .nav-item.active {
   text-decoration: underline;
@@ -145,6 +142,9 @@ footer {
   border-radius: 10px;
 }
 
+.card-text {
+  text-align: justify;
+}
 /*CARD DESTINOS*/
 .container {
   background-color: rgba(8, 6, 61, 0);
@@ -313,125 +313,64 @@ main {
 }
 
 /*FORM*/
-.contact_form {
-  background-color: #8eaebd;
-  width: 485px;
-  height: auto;
-  margin: 80px auto;
-  border-radius: 10px;
-  text-align: left;
-  padding-top: 30px;
-  padding-bottom: 20px;
-  padding-left: 30px;
-  display: flex;
+form {
+  margin: 50px auto;
 }
 
-input {
-  background-color: #fbfbfb;
-  width: 408px;
-  height: 40px;
+.feedback-input {
+  color: white;
+  font-family: "Acme", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
   border-radius: 5px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #031424;
-  margin-top: 10px;
-  padding-left: 10px;
-  margin-bottom: 20px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid #8eaebd;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.feedback-input:focus {
+  border: 2px solid #30415d;
 }
 
 textarea {
-  background-color: #fbfbfb;
-  width: 405px;
   height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+[type="submit"] {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  width: 100%;
+  background: #8eaebd;
   border-radius: 5px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #031424;
-  margin-top: 10px;
-  padding-left: 10px;
-  margin-bottom: 20px;
-  padding-top: 15px;
-}
-
-label {
-  display: flex;
-  float: center;
-}
-
-button {
-  height: 45px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin-bottom: 20px;
-  margin-top: 10px;
-  text-transform: uppercase;
-  background-color: #30415d;
-  border-color: #031424;
-  border-style: solid;
-  border-radius: 10px;
-  width: 420px;
+  border: 0;
   cursor: pointer;
-}
-
-button p {
-  color: #fff;
-}
-
-span {
   color: #031424;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
 }
-
-.aviso {
-  font-size: 13px;
-  color: #0e0e0e;
+[type="submit"]:hover {
+  background: #30415d;
 }
 
 .contactanos {
-  font-size: 35px;
+  color: #8eaebd;
   text-align: center;
-  padding-bottom: 20px;
-  color: #031424;
-}
-
-.breve {
-  font-size: 14px;
-  padding-bottom: 30px;
-  color: #0e0e0e;
-}
-
-.form-p {
-  font-size: 14px;
-  color: #0e0e0e;
-}
-
-::-webkit-input-placeholder {
-  color: #a8a8a8;
-}
-
-::-webkit-textarea-placeholder {
-  color: #a8a8a8;
-}
-
-.formulario input:focus {
-  outline: 0;
-  border: 1px solid #cf6766;
-}
-
-.formulario textarea:focus {
-  outline: 0;
-  border: 1px solid #cf6766;
 }
 
 @media (min-width: 992px) {
   .alto {
     height: 100vh;
-  }
-}
-@media (min-width: 768px) {
-  body {
-    grid-template-rows: auto 1fr auto;
-    grid-template-columns: 12rem 1fr;
-    grid-template-areas: "header nav" "main main" "footer footer";
   }
 }
 
