@@ -20,7 +20,6 @@ header {
 }
 
 /*NAVBAR*/
-
 .nav-item.active {
   text-decoration: underline;
   color: #30415d;
@@ -142,9 +141,6 @@ footer {
   border-radius: 10px;
 }
 
-.card-text {
-  text-align: justify;
-}
 /*CARD DESTINOS*/
 .container {
   background-color: rgba(8, 6, 61, 0);
@@ -359,6 +355,7 @@ textarea {
   margin-top: -4px;
   font-weight: 700;
 }
+
 [type="submit"]:hover {
   background: #30415d;
 }
