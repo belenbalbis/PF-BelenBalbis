@@ -14,18 +14,16 @@
 header {
   display: flex;
 }
-
-.img-logo {
+header .img-logo {
   width: 200px;
 }
 
 /*NAVBAR*/
-.nav-item.active {
+.navbar .nav-item.active {
   text-decoration: underline;
   color: #30415d;
 }
-
-.nav-item:hover {
+.navbar .nav-item:hover {
   text-decoration: underline;
   color: #30415d;
 }
@@ -42,9 +40,7 @@ body {
   grid-template-columns: 1fr;
   grid-template-areas: "header" "nav" "main" "footer";
 }
-
-/*MAIN*/
-main {
+body main {
   background-color: #031424;
   color: #ffffff;
   padding: 1rem;
@@ -56,29 +52,26 @@ main {
   width: 100%;
   max-height: 650px;
 }
-
-.carousel-inner {
+.carousel-inner img .carousel-inner {
   height: 650px;
 }
 
 /*INDEX VENTAJAS SOMOS TRAVEL*/
-i {
-  font-size: 100px;
-  color: #8eaebd;
+.ventajas {
+  text-align: center;
 }
 
-.card-title1,
-.card-p1 {
+.card1 .card-title1,
+.card1 .card-p1 {
   margin-bottom: 10px;
   text-align: center;
 }
-
-.text-center {
+.card1 .text-center {
   text-align: center;
 }
-
-.ventajas {
-  text-align: center;
+.card1 i {
+  font-size: 100px;
+  color: #8eaebd;
 }
 
 .card1:hover {
@@ -93,46 +86,23 @@ footer {
   padding: 1rem;
   grid-area: footer;
 }
-
-.fa-brands {
+footer .pie {
+  list-style-type: none;
+  display: flex;
+}
+footer .pie .item-footer {
+  margin-right: 54px;
+}
+footer .pie .item-footer .fa-brands {
   font-size: 20px;
   text-decoration: none;
   color: #ffffff;
 }
-
-.fa-brands:hover {
+footer .pie .item-footer .fa-brands:hover {
   color: #30415d;
 }
 
-.insta {
-  text-align: left;
-  list-style-type: none;
-}
-
-.fb {
-  list-style-type: none;
-  text-align: left;
-}
-
-.tw {
-  list-style-type: none;
-  text-align: left;
-}
-
-.pie {
-  list-style-type: none;
-  display: flex;
-}
-
-.item-footer {
-  margin-right: 54px;
-}
-
 /*ANTES DE VIAJAR*/
-.h2-antes {
-  text-align: left;
-}
-
 .card {
   background-color: #30415d;
   color: #ffffff;
@@ -140,8 +110,7 @@ footer {
   margin: 10px;
   border-radius: 10px;
 }
-
-.card-text {
+.card .card-text {
   text-align: justify;
 }
 
@@ -149,26 +118,21 @@ footer {
 .container {
   background-color: rgba(8, 6, 61, 0);
 }
-
-main {
-  padding: 25px;
-}
-
-.card-img {
+.container .card .card-img {
   max-width: 100%;
   align-self: center;
   width: 100%;
+  margin-bottom: 10px;
 }
-
-.card-title {
+.container .card .card-title {
   font-size: 18px;
+  margin-bottom: 10px;
 }
-
-.card-p {
+.container .card .card-p {
   font-size: 14px;
+  margin-bottom: 10px;
 }
-
-.card-button {
+.container .card .card-button {
   background-color: #7298ac;
   border: 0;
   padding: 10px;
@@ -176,61 +140,45 @@ main {
   cursor: pointer;
   width: 100%;
 }
-
-.card-button:hover {
+.container .card .card-button:hover {
   background-color: #031424;
   color: #7298ac;
 }
 
-.card-img,
-.card-title,
-.card-p {
-  margin-bottom: 10px;
+/*EGIPTO*/
+.fa-solid {
+  font-size: 100px;
+  padding-bottom: 15px;
 }
 
-/*EGIPTO*/
 .egipto10 {
   text-align: center;
+  padding-bottom: 15px;
 }
 
-.title-eg,
 .h4-eg,
 .p-eg {
   margin-bottom: 10px;
   text-align: center;
 }
 
-.title-eg {
-  color: #cf6766;
-}
-
-.deseg {
-  width: 70%;
-  text-align: center;
-}
-
 .ulegipto {
   list-style-type: none;
 }
-
-.bi {
+.ulegipto .bi {
   font-size: 1rem;
 }
 
 /*KENIA*/
 .safari {
   text-align: center;
+  padding-bottom: 15px;
 }
 
-.title-kenia,
 .h4-kenia,
 .p-kenia {
   margin-bottom: 10px;
   text-align: center;
-}
-
-.title-kenia {
-  color: #cf6766;
 }
 
 .ulkenia {
@@ -240,9 +188,9 @@ main {
 /*MACHUPICCHU*/
 .montañas {
   text-align: center;
+  padding-bottom: 15px;
 }
 
-.title-machu,
 .h4-machu,
 .p-machu {
   margin-bottom: 10px;
@@ -256,9 +204,9 @@ main {
 /*MALDIVAS*/
 .islas {
   text-align: center;
+  padding-bottom: 15px;
 }
 
-.title-maldivas,
 .h4-maldivas,
 .p-maldivas {
   margin-bottom: 10px;
@@ -272,9 +220,9 @@ main {
 /*RIO DE JANEIRO*/
 .rio {
   text-align: center;
+  padding-bottom: 15px;
 }
 
-.title-rio,
 .h4-rio,
 .p-rio {
   margin-bottom: 10px;
@@ -288,9 +236,9 @@ main {
 /*TAILANDIA*/
 .tailandia {
   text-align: center;
+  padding-bottom: 15px;
 }
 
-.title-tai,
 .h4-tai,
 .p-tai {
   margin-bottom: 10px;
@@ -302,23 +250,25 @@ main {
 }
 
 /*ACCORDIONS*/
-.accordion-body {
+.accordion .accordion-body {
   color: #ffffff;
   background-color: #30415d;
 }
-
-.accordion-button {
+.accordion .accordion-button {
   color: #ffffff;
   background-color: #031424;
 }
 
 /*FORM*/
-/*FORM*/
+.contactanos {
+  color: #8eaebd;
+  text-align: center;
+}
+
 form {
   margin: 50px auto;
 }
-
-.feedback-input {
+form .feedback-input {
   color: white;
   font-family: "Acme", sans-serif;
   font-weight: 500;
@@ -334,18 +284,15 @@ form {
   box-sizing: border-box;
   outline: 0;
 }
-
-.feedback-input:focus {
+form .feedback-input:focus {
   border: 2px solid #30415d;
 }
-
-textarea {
+form textarea {
   height: 150px;
   line-height: 150%;
   resize: vertical;
 }
-
-[type=submit] {
+form [type=submit] {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   width: 100%;
   background: #8eaebd;
@@ -360,14 +307,8 @@ textarea {
   margin-top: -4px;
   font-weight: 700;
 }
-
-[type=submit]:hover {
+form [type=submit]:hover {
   background: #30415d;
-}
-
-.contactanos {
-  color: #8eaebd;
-  text-align: center;
 }
 
 @media (min-width: 992px) {

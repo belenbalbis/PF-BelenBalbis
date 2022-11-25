@@ -13,22 +13,22 @@
 /*HEADER*/
 header {
   display: flex;
-}
-
-.img-logo {
-  width: 200px;
+  .img-logo {
+    width: 200px;
+  }
 }
 
 /*NAVBAR*/
 
-.nav-item.active {
-  text-decoration: underline;
-  color: #30415d;
-}
-
-.nav-item:hover {
-  text-decoration: underline;
-  color: #30415d;
+.navbar {
+  .nav-item.active {
+    text-decoration: underline;
+    color: #30415d;
+  }
+  .nav-item:hover {
+    text-decoration: underline;
+    color: #30415d;
+  }
 }
 
 /*BODY*/
@@ -42,46 +42,43 @@ body {
   min-height: 100vh;
   grid-template-columns: 1fr;
   grid-template-areas: "header" "nav" "main" "footer";
-}
-
-/*MAIN*/
-main {
-  background-color: #031424;
-  color: #ffffff;
-  padding: 1rem;
-  grid-area: main;
+  main {
+    background-color: #031424;
+    color: #ffffff;
+    padding: 1rem;
+    grid-area: main;
+  }
 }
 
 /*CAROUSEL*/
 .carousel-inner img {
   width: 100%;
   max-height: 650px;
-}
-
-.carousel-inner {
-  height: 650px;
+  .carousel-inner {
+    height: 650px;
+  }
 }
 
 /*INDEX VENTAJAS SOMOS TRAVEL*/
-i {
-  font-size: 100px;
-  color: #8eaebd;
-}
-
-.card-title1,
-.card-p1 {
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.text-center {
-  text-align: center;
-}
 
 .ventajas {
   text-align: center;
 }
 
+.card1 {
+  .card-title1,
+  .card-p1 {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .text-center {
+    text-align: center;
+  }
+  i {
+    font-size: 100px;
+    color: #8eaebd;
+  }
+}
 .card1:hover {
   background-color: #30415d;
   border-radius: 10px;
@@ -94,46 +91,24 @@ footer {
   color: #ffffff;
   padding: 1rem;
   grid-area: footer;
-}
-
-.fa-brands {
-  font-size: 20px;
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.fa-brands:hover {
-  color: #30415d;
-}
-
-.insta {
-  text-align: left;
-  list-style-type: none;
-}
-
-.fb {
-  list-style-type: none;
-  text-align: left;
-}
-
-.tw {
-  list-style-type: none;
-  text-align: left;
-}
-
-.pie {
-  list-style-type: none;
-  display: flex;
-}
-
-.item-footer {
-  margin-right: 54px;
+  .pie {
+    list-style-type: none;
+    display: flex;
+    .item-footer {
+      margin-right: 54px;
+      .fa-brands {
+        font-size: 20px;
+        text-decoration: none;
+        color: #ffffff;
+        &:hover {
+          color: #30415d;
+        }
+      }
+    }
+  }
 }
 
 /*ANTES DE VIAJAR*/
-.h2-antes {
-  text-align: left;
-}
 
 .card {
   background-color: #30415d;
@@ -141,98 +116,79 @@ footer {
   padding: 10px;
   margin: 10px;
   border-radius: 10px;
+  .card-text {
+    text-align: justify;
+  }
 }
 
-.card-text {
-  text-align: justify;
-}
 /*CARD DESTINOS*/
 .container {
   background-color: #08063d00;
-}
-
-main {
-  padding: 25px;
-}
-
-.card-img {
-  max-width: 100%;
-  align-self: center;
-  width: 100%;
-}
-
-.card-title {
-  font-size: 18px;
-}
-
-.card-p {
-  font-size: 14px;
-}
-
-.card-button {
-  background-color: #7298ac;
-  border: 0;
-  padding: 10px;
-  border-radius: 10px;
-  cursor: pointer;
-  width: 100%;
-}
-
-.card-button:hover {
-  background-color: #031424;
-  color: #7298ac;
-}
-
-.card-img,
-.card-title,
-.card-p {
-  margin-bottom: 10px;
+  .card {
+    .card-img {
+      max-width: 100%;
+      align-self: center;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .card-title {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .card-p {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    .card-button {
+      background-color: #7298ac;
+      border: 0;
+      padding: 10px;
+      border-radius: 10px;
+      cursor: pointer;
+      width: 100%;
+      &:hover {
+        background-color: #031424;
+        color: #7298ac;
+      }
+    }
+  }
 }
 
 /*EGIPTO*/
 
-.egipto10 {
-  text-align: center;
+.fa-solid {
+  font-size: 100px;
+  padding-bottom: 15px;
 }
 
-.title-eg,
+.egipto10 {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
 .h4-eg,
 .p-eg {
   margin-bottom: 10px;
   text-align: center;
 }
 
-.title-eg {
-  color: #cf6766;
-}
-
-.deseg {
-  width: 70%;
-  text-align: center;
-}
-
 .ulegipto {
   list-style-type: none;
-}
-
-.bi {
-  font-size: 1rem;
+  .bi {
+    font-size: 1rem;
+  }
 }
 
 /*KENIA*/
 .safari {
   text-align: center;
+  padding-bottom: 15px;
 }
 
-.title-kenia,
 .h4-kenia,
 .p-kenia {
   margin-bottom: 10px;
   text-align: center;
-}
-
-.title-kenia {
-  color: #cf6766;
 }
 
 .ulkenia {
@@ -242,9 +198,9 @@ main {
 /*MACHUPICCHU*/
 .montañas {
   text-align: center;
+  padding-bottom: 15px;
 }
 
-.title-machu,
 .h4-machu,
 .p-machu {
   margin-bottom: 10px;
@@ -258,9 +214,9 @@ main {
 /*MALDIVAS*/
 .islas {
   text-align: center;
+  padding-bottom: 15px;
 }
 
-.title-maldivas,
 .h4-maldivas,
 .p-maldivas {
   margin-bottom: 10px;
@@ -274,9 +230,9 @@ main {
 /*RIO DE JANEIRO*/
 .rio {
   text-align: center;
+  padding-bottom: 15px;
 }
 
-.title-rio,
 .h4-rio,
 .p-rio {
   margin-bottom: 10px;
@@ -290,9 +246,9 @@ main {
 /*TAILANDIA*/
 .tailandia {
   text-align: center;
+  padding-bottom: 15px;
 }
 
-.title-tai,
 .h4-tai,
 .p-tai {
   margin-bottom: 10px;
@@ -304,71 +260,69 @@ main {
 }
 
 /*ACCORDIONS*/
-.accordion-body {
-  color: #ffffff;
-  background-color: #30415d;
+
+.accordion {
+  .accordion-body {
+    color: #ffffff;
+    background-color: #30415d;
+  }
+  .accordion-button {
+    color: #ffffff;
+    background-color: #031424;
+  }
 }
 
-.accordion-button {
-  color: #ffffff;
-  background-color: #031424;
-}
 /*FORM*/
-/*FORM*/
-form {
-  margin: 50px auto;
-}
-
-.feedback-input {
-  color: white;
-  font-family: "Acme", sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  border-radius: 5px;
-  line-height: 22px;
-  background-color: transparent;
-  border: 2px solid #8eaebd;
-  transition: all 0.3s;
-  padding: 13px;
-  margin-bottom: 15px;
-  width: 100%;
-  box-sizing: border-box;
-  outline: 0;
-}
-
-.feedback-input:focus {
-  border: 2px solid #30415d;
-}
-
-textarea {
-  height: 150px;
-  line-height: 150%;
-  resize: vertical;
-}
-
-[type="submit"] {
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
-  width: 100%;
-  background: #8eaebd;
-  border-radius: 5px;
-  border: 0;
-  cursor: pointer;
-  color: #031424;
-  font-size: 24px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  transition: all 0.3s;
-  margin-top: -4px;
-  font-weight: 700;
-}
-[type="submit"]:hover {
-  background: #30415d;
-}
-
 .contactanos {
   color: #8eaebd;
   text-align: center;
 }
+form {
+  margin: 50px auto;
+  .feedback-input {
+    color: white;
+    font-family: "Acme", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border: 2px solid #8eaebd;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+    &:focus {
+      border: 2px solid #30415d;
+    }
+  }
+  textarea {
+    height: 150px;
+    line-height: 150%;
+    resize: vertical;
+  }
+  [type="submit"] {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    width: 100%;
+    background: #8eaebd;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: #031424;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 700;
+    &:hover {
+      background: #30415d;
+    }
+  }
+}
+
 @media (min-width: 992px) {
   .alto {
     height: 100vh;
